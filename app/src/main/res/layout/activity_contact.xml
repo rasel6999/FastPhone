@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/main_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+
+            app:elevation="10dp"
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="@string/contact_with_us"
+            app:titleTextAppearance="@style/AppTheme.ActionBar.TitleTextStyle"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+
+    <ScrollView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_icon_30"
+                app:tint="@color/default_text_color" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/header_cover_image"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-60dp"
+                android:background="@drawable/circle_on_profile"
+                android:contentDescription="@string/todo"
+                android:elevation="5dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic_dev" />
+
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_cover_image"
+                android:elevation="0dp"
+                android:paddingBottom="24dp">
+
+
+                <ImageView
+                    android:id="@+id/whatsapp_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toStartOf="@+id/messenger_btn"
+                    android:contentDescription="@string/todo"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/messenger_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/todo"
+                     />
+
+                <TextView
+
+                    android:textColor="@android:color/primary_text_dark"
+                    android:id="@+id/user_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="76dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/bn_title"
+                    android:text="@string/dev_name"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+
+                    android:textColor="@android:color/secondary_text_dark"
+                    android:id="@+id/user_profile_short_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/bn_title"
+                    android:text="@string/dev_description"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_layout"
+
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/contactEmail"
+                        android:textColor="@android:color/secondary_text_dark"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:elevation="4dp"
+                        android:focusable="true"
+                        android:fontFamily="@font/bn_title"
+                        android:padding="10dp"
+                        android:text="@string/con_email" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="0.7"
+                        android:clickable="true"
+                        android:elevation="4dp"
+                        android:focusable="true"
+                        android:fontFamily="@font/baloo_reguler"
+                        android:padding="10dp"
+                        android:text="@string/dev_email"
+                        android:textColor="@android:color/primary_text_dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/contactPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:elevation="4dp"
+                        android:focusable="true"
+                        android:fontFamily="@font/bn_title"
+                        android:padding="10dp"
+                        android:text="@string/con_phone" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="0.7"
+                        android:clickable="true"
+                        android:elevation="4dp"
+                        android:focusable="true"
+                        android:fontFamily="@font/baloo_reguler"
+                        android:padding="10dp"
+                        android:text="@string/dev_number"
+                        android:textColor="@android:color/primary_text_dark"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/contactWerbsite"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.3"
+                        android:clickable="true"
+                        android:elevation="4dp"
+                        android:focusable="true"
+                        android:fontFamily="@font/bn_title"
+                        android:padding="10dp"
+                        android:text="@string/con_Website" />
+
+                    <TextView
+                        android:id="@+id/website"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_weight="0.7"
+                        android:clickable="true"
+                        android:elevation="4dp"
+                        android:focusable="true"
+                        android:padding="10dp"
+                        android:text="@string/dev_link"
+                        android:textColor="@android:color/primary_text_dark" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

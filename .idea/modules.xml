@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Simple-Dialer.iml" filepath="$PROJECT_DIR$/.idea/modules/Simple-Dialer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Simple-Dialer.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Simple-Dialer.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Simple-Dialer.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Simple-Dialer.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Simple-Dialer.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Simple-Dialer.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Simple-Dialer.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Simple-Dialer.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/Simple-Dialer.libs.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/Simple-Dialer.libs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/common/Simple-Dialer.libs.common.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/common/Simple-Dialer.libs.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/common/Simple-Dialer.libs.common.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/common/Simple-Dialer.libs.common.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/common/Simple-Dialer.libs.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/common/Simple-Dialer.libs.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/common/Simple-Dialer.libs.common.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/common/Simple-Dialer.libs.common.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/rdxrasel/Simple-Dialer.libs.rdxrasel.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/rdxrasel/Simple-Dialer.libs.rdxrasel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/rdxrasel/Simple-Dialer.libs.rdxrasel.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/rdxrasel/Simple-Dialer.libs.rdxrasel.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/rdxrasel/Simple-Dialer.libs.rdxrasel.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/rdxrasel/Simple-Dialer.libs.rdxrasel.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libs/rdxrasel/Simple-Dialer.libs.rdxrasel.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libs/rdxrasel/Simple-Dialer.libs.rdxrasel.unitTest.iml" />
+    </modules>
+  </component>
+</project>

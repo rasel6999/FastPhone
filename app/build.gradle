@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.macwap.fast.phone"
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 3
+        versionName "1.0.2-allahumagferle"
+        setProperty("archivesBaseName", "dialer")
+    }
+
+/*    signingConfigs {
+        if (keystorePropertiesFile.exists()) {
+            release {
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+            }
+        }
+    }*/
+
+    buildTypes {
+        debug {
+           // applicationIdSuffix ".debug"
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    flavorDimensions "variants"
+    productFlavors {
+        core {}
+        fdroid {}
+        prepaid {}
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+   // implementation 'com.github.SimpleMobileTools:Simple-Commons:28a2a4ad46'
+    implementation 'com.github.tibbi:IndicatorFastScroll:4524cd0b61'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation project(path: ':libs:common')
+    implementation project(path: ':libs:rdxrasel')
+    implementation      'de.hdodenhof:circleimageview:3.1.0'
+
+}
